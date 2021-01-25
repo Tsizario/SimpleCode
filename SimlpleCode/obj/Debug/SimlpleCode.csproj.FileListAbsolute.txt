@@ -1,7 +1,0 @@
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\bin\Debug\SimlpleCode.exe.config
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\bin\Debug\SimlpleCode.exe
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\bin\Debug\SimlpleCode.pdb
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\obj\Debug\SimlpleCode.csprojAssemblyReference.cache
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\obj\Debug\SimlpleCode.csproj.CoreCompileInputs.cache
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\obj\Debug\SimlpleCode.exe
-E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\SimlpleCode\obj\Debug\SimlpleCode.pdb

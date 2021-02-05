@@ -1,0 +1,7 @@
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\bin\Debug\Homework.exe.config
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\bin\Debug\Homework.exe
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\bin\Debug\Homework.pdb
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\obj\Debug\Homework.exe
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\obj\Debug\Homework.pdb
+E:\Big Data\Microsoft Visual Studio\MVS\LessonsWithSimpleCode\Homework\obj\Debug\Homework.csprojAssemblyReference.cache

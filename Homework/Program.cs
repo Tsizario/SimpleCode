@@ -4,70 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Triangle_1
+namespace Array
 {
     /* 
-     * Треугольники в консоли С#
+     * 1) Заполнить массив с клавиатуры;
+     * 
      */
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the height of triangle: ");
-            int height = int.Parse(Console.ReadLine());
+            Console.Write("Введите количество элементов массива:\t");
 
-            for (int i = 0; i < height; i++)
+            int elements = int.Parse(Console.ReadLine());
+            int[] myArray = new int[elements];
+
+            for (int i = 0; i < myArray.Length; i++)
             {
-                for (int j = 0; j <= i; j++)
-                {
-                    Console.Write("#");
-                }
-                Console.WriteLine();
+                Console.Write($"\nВведите элемент с индексом {i}: ");
+                myArray[i] = int.Parse(Console.ReadLine());
             }
+            Console.WriteLine("\nВывод массива: ");
 
-            Console.ReadLine();
-
-            for (int i = height; i > 0; i--)
+            for (int i = 0; i < myArray.Length; i++)
             {
-                for (int j = 0; j < i; j++)
-                {
-                    Console.Write("#");
-                }
-                Console.WriteLine();
+                Console.WriteLine(myArray[i]);
             }
-
-            Console.ReadLine();
-
-            for (int i = 0; i < height; i++)
-            {
-                for (int j = height-1; j > i; j--)
-                {
-                    Console.Write(" ");
-                }
-                
-                for (int j = 0; j <= i; j++)
-                {
-                    Console.Write("#");
-                }
-                Console.WriteLine();
-            }
-
-            Console.ReadLine();
-
-            for (int i = 0; i < height; i++)
-            {
-                for (int j = height; j > i; j--)
-                {
-                    Console.Write("#");
-                }
-
-                for (int j = 0; j < i; j++)
-                {
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
-            }
-
-        }   
+        }
     }
 }
+
+//2) Вывести массив в обатном порядке;
+//*3) Найти сумму четных чисел в массиве;
+//*4) Найти наименьшее число в массиве;

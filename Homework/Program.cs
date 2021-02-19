@@ -8,23 +8,36 @@ namespace Array
 {
     /* 
      * 
-     * 4) Найти наименьшее число в массиве;
      */
     class Program
     {
         static void Main(string[] args)
         {
-            int[] myArray = { 2, 3, 99, 49, 64, 77, 4, 42, 1};
-            int minValue = myArray[0];
+            int[][] myArray = new int[5][];
+            myArray[0] = new int[5];
+            myArray[1] = new int[7];
+            myArray[2] = new int[8];
+            myArray[3] = new int[3];
+            myArray[4] = new int[10];
 
-            for(int i = 1; i <= myArray.Length; i++)
+            Random random = new Random();
+
+            for (int i = 0; i < myArray.Length; i++)
             {
-                if (myArray[i] < minValue)
+                for (int j = 0; j < myArray[i].Length; j++)
                 {
-                    minValue = myArray[i];
+                    myArray[i][j] = random.Next(100);
                 }
             }
-            Console.WriteLine(minValue);
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                for (int j = 0; j < myArray[i].Length; j++)
+                {
+                    Console.Write(myArray[i][j] + "\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

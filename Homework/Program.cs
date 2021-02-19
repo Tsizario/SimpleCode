@@ -7,33 +7,24 @@ using System.Threading.Tasks;
 namespace Array
 {
     /* 
-     * 1) Заполнить массив с клавиатуры;
      * 
+     * 4) Найти наименьшее число в массиве;
      */
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите количество элементов массива:\t");
+            int[] myArray = { 2, 3, 99, 49, 64, 77, 4, 42, 1};
+            int minValue = myArray[0];
 
-            int elements = int.Parse(Console.ReadLine());
-            int[] myArray = new int[elements];
-
-            for (int i = 0; i < myArray.Length; i++)
+            for(int i = 1; i <= myArray.Length; i++)
             {
-                Console.Write($"\nВведите элемент с индексом {i}: ");
-                myArray[i] = int.Parse(Console.ReadLine());
+                if (myArray[i] < minValue)
+                {
+                    minValue = myArray[i];
+                }
             }
-            Console.WriteLine("\nВывод массива: ");
-
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                Console.WriteLine(myArray[i]);
-            }
+            Console.WriteLine(minValue);
         }
     }
 }
-
-//2) Вывести массив в обатном порядке;
-//*3) Найти сумму четных чисел в массиве;
-//*4) Найти наименьшее число в массиве;

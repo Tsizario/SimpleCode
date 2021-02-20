@@ -11,33 +11,35 @@ namespace Array
      */
     class Program
     {
+        // передача параметра с params
+        static void Addition(params int[] integers)
+        {
+            int result = 0;
+            for (int i = 0; i < integers.Length; i++)
+            {
+                result += integers[i];
+            }
+            Console.WriteLine(result);
+        }
+        // передача массива
+        static void AdditionMas(int[] integers, int k)
+        {
+            int result = 0;
+            for (int i = 0; i < integers.Length; i++)
+            {
+                result += (integers[i] * k);
+            }
+            Console.WriteLine(result);
+        }
+
         static void Main(string[] args)
         {
-            int[][] myArray = new int[5][];
-            myArray[0] = new int[5];
-            myArray[1] = new int[7];
-            myArray[2] = new int[8];
-            myArray[3] = new int[3];
-            myArray[4] = new int[10];
+            Addition(1, 2, 3, 4, 5);
 
-            Random random = new Random();
+            int[] array = new int[] { 1, 2, 3, 4 };
+            AdditionMas(array, 2);
 
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                for (int j = 0; j < myArray[i].Length; j++)
-                {
-                    myArray[i][j] = random.Next(100);
-                }
-            }
-
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                for (int j = 0; j < myArray[i].Length; j++)
-                {
-                    Console.Write(myArray[i][j] + "\t");
-                }
-                Console.WriteLine();
-            }
+            Console.ReadLine();
         }
     }
 }
